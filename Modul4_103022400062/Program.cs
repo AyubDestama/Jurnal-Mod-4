@@ -12,5 +12,15 @@ class Program
         string kode = kp.getKodePaket(nama);
 
         Console.WriteLine("Kode Paket: " + kode);
+
+    MesinKopi kopi = new MesinKopi();
+        kopi.PowerOn();
+        kopi.StartBrew();
+        kopi.FinishBrew();
+        kopi.StartMaintenance();
+        kopi.FinishMaintenance();
+        kopi.PowerOff();
+
     }
+
 }
